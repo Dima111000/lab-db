@@ -1,9 +1,12 @@
 import express from 'express'
 import { Sequelize } from 'sequelize'
-
-const PORT = 5000
+import dotenv from "dotenv"
+import cors from "cors"
 
 const app = express()
+dotenv.config()
+const PORT = process.env.PORT || 5000
+app.use(cors())
 
 const sequelize = new Sequelize('test_db', 'postgres','qazqazqaz', {
     dialect: 'postgres',

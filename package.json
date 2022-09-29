@@ -5,12 +5,15 @@
   "type": "module",
   "main": "conn.js",
   "scripts": {
-    "dev": "nodemon conn.js"
+    "dev": "nodemon conn.js",
+    "start": "node conn.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "pg": "^8.8.0",
     "pg-hstore": "^2.3.4",
