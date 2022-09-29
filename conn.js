@@ -28,7 +28,7 @@ const start = async () => {
 }
 
 
-app.get('/', (req, res) => {
+app.get('https://app-db-udin.herokuapp.com/', (req, res) => {
     res.end(`
         <style>
             .main-div {
@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
     `)
 })
 
-app.get('/about', (req, res) => {
+app.get('https://app-db-udin.herokuapp.com/about', (req, res) => {
     res.end(`
         <style>
             .main-div {
